@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./fonts/CeraPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+:root {
+  --color-orange: #ff7715;
+  --color-white: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  min-width: 375px;
+}
+body * {
+  color: #191919;
+  font-family: Cera Pro;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn-orange {
+  border: none;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 183px;
+  height: 48px;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+section {
+  display: flex;
+  width: 100%;
+  max-width: 1277px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+header * {
+  display: flex;
+}
+header section {
+  justify-content: space-between;
+}
+header .top-bar,
+header .bottom-bar {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+header .top-bar {
+  height: 60px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+header .btn-burger {
+  display: none;
+}
+
+header .top-bar .nav-top {
+  align-items: center;
+  gap: 22px;
+}
+
+.searchBox {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 460px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.searchBox img {
+  position: absolute;
+  right: 1px;
+}
+.searchBox input {
+  width: 100%;
+  border: none;
+}
+
+header .basket img {
+  align-self: flex-end;
+  width: 20px;
+  height: 20px;
+}
+header .basket-counter {
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+}
+header .top-bar .right-nav .location {
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+header .top-bar .right-nav .phone {
+  align-items: center;
+  margin-left: 22px;
+}
+header .top-bar .right-nav .phone a {
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+}
+header .top-bar nav li a {
+  text-decoration: none;
+}
+header .bottom-bar section {
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+header .bottom-bar .nav-top,
+header .bottom-bar .basket {
+  display: none;
+}
+header .sub-header,
+header .breadcrumbs {
+  width: 100%;
+  margin-top: auto;
+}
+header .sub-header {
+  justify-content: space-between;
+}
+header .sub-header nav {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 16px;
+}
+header .sub-header nav li a {
+  text-decoration: none;
+  font-weight: 500;
+}
+header .sub-header nav li:nth-child(1) {
+  gap: 9px;
+}
+
+header .btn-header-bottom {
+  display: none;
+}
+header .breadcrumbs {
+  gap: 10px;
+}
+header .breadcrumbs li:nth-child(1) a {
+  color: var(--color-orange);
+}
+
+@media screen and (max-width: 1300px) {
+  section {
+    max-width: 1024px;
+  }
+  header {
+    padding: 0px 60px;
+  }
+  header .top-bar,
+  header .bottom-bar .nav-bottom,
+  header .bottom-bar .basket-counter {
+    display: none;
+  }
+  header .bottom-bar .nav-top,
+  header .bottom-bar .basket,
+  header .btn-burger {
+    display: flex;
+  }
+  header .bottom-bar .nav-top {
+    margin-left: 30px;
+  }
+  header .bottom-bar .sub-header {
+    justify-content: flex-start;
+  }
+  header .bottom-bar .basket {
+    align-items: center;
+    justify-content: center;
+  }
+  header .bottom-bar .basket img {
+    align-self: unset;
+    width: 24px;
+    height: 24px;
+  }
+  header .bottom-bar .right-nav {
+    margin-left: auto;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 880px) {
+  section {
+    max-width: 335px;
+  }
+  header {
+    padding: 0px 20px;
+  }
+  header .top-bar {
+    display: flex;
+    height: 60px;
+  }
+  header .top-bar .right-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header .top-bar .nav-top,
+  header .top-bar .searchBox,
+  header .top-bar .basket,
+  header .bottom-bar .nav-top,
+  header .bottom-bar .btn-header-top {
+    display: none;
+  }
+  header .bottom-bar section {
+    height: 170px;
+    gap: 20px;
+  }
+  header .bottom-bar .breadcrumbs,
+  header .top-bar .right-nav .location,
+  header .bottom-bar .sub-header {
+    margin: 0;
+  }
+
+  header .btn-header-bottom {
+    width: 100%;
+    display: flex;
+  }
+}
