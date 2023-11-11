@@ -4,21 +4,42 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "Cera Pro Light";
+  src: url("./fonts/CeraPro-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 :root {
   --color-orange: #ff7715;
   --color-white: #fff;
+  --color-black: #191919;
 }
 * {
   box-sizing: border-box;
 }
 body,
 html {
-  padding: 0;
-  margin: 0;
   min-width: 375px;
 }
+body,
+html,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 body * {
-  color: #191919;
+  color: var(--color-black);
   font-family: Cera Pro;
   font-size: 15px;
   font-style: normal;
@@ -171,13 +192,87 @@ header .breadcrumbs li:nth-child(1) a {
   color: var(--color-orange);
 }
 
+footer,
+footer * {
+  display: flex;
+  color: var(--color-white);
+}
+
+footer {
+  width: 100%;
+  height: 488px;
+  justify-content: center;
+  background-color: var(--color-black);
+}
+
+footer section {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 84px;
+}
+footer .footer-columns {
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer section > .logo-footer:first-child {
+  display: none;
+}
+footer .logo-footer {
+  width: 217px;
+  height: 42px;
+}
+
+.footer-col .article-tittle h3 {
+  font-size: 18px;
+}
+.footer-col ul li,
+.footer-col ul li a {
+  font-size: 14px;
+  font-family: "Cera Pro Light";
+}
+.footer-col .social {
+  gap: 12px;
+}
+footer .footer-col a {
+  text-decoration: none;
+}
+footer .footer-col,
+footer .footer-col article,
+footer .footer-col article ul {
+  flex-direction: column;
+}
+footer .footer-first-col {
+  max-width: 285px;
+  gap: 30px;
+}
+footer .footer-first-col .article-tittle {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .footer-first-col .article-tittle a {
+  font-size: 14px;
+}
+
+footer .footer-first-col ul li {
+  font-size: 12px;
+}
+
+footer .footer-col article ul {
+  margin-top: 25px;
+  gap: 21px;
+}
+
+footer .footer-catalog {
+  max-width: 125px;
+}
+
+/*-------------media-query-----------------------*/
 @media screen and (max-width: 1300px) {
   section {
-    max-width: 1024px;
+    max-width: 900px;
   }
-  header {
-    padding: 0px 60px;
-  }
+
   header .top-bar,
   header .bottom-bar .nav-bottom,
   header .bottom-bar .basket-counter {
@@ -207,14 +302,32 @@ header .breadcrumbs li:nth-child(1) a {
     margin-left: auto;
     gap: 15px;
   }
+  /* -------------footer-----------------*/
+  footer section {
+    margin-top: 52px;
+  }
+  footer .footer-columns {
+    margin-top: 70px;
+  }
+  footer section > .logo-footer:first-child {
+    display: flex;
+  }
+  footer .footer-first-col {
+    max-width: 161px;
+    order: 1;
+  }
+  footer .footer-first-col .article-tittle {
+    gap: 20px;
+  }
+  footer .footer-first-col .logo-footer {
+    display: none;
+  }
 }
 @media screen and (max-width: 880px) {
   section {
     max-width: 335px;
   }
-  header {
-    padding: 0px 20px;
-  }
+
   header .top-bar {
     display: flex;
     height: 60px;
