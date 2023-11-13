@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+.box-contacts {
+  flex-direction: column;
+  padding: 0px 0 80px 0;
+}
+.box-contacts * {
+  display: flex;
+}
+.box-contacts h1 {
+  color: var(--color-black);
+  font-family: "Geometria";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-top: 67px;
+}
+.box-contacts .info-container {
+  margin-top: 30px;
+}
+
+.box-contacts .left-side,
+.box-contacts .right-side {
+  flex-direction: column;
+  gap: 40px;
+}
+.box-contacts .left-side {
+  max-width: 480px;
+}
+.box-contacts .right-side {
+  max-width: 595px;
+  margin-left: 170px;
+}
+
+.info-container .right-side > .info:nth-child(1),
+.info-container .right-side > .info:nth-child(2) {
+  max-width: 490px;
+}
+
+.box-contacts .info {
+  flex-direction: column;
+  gap: 10px;
+}
+.box-contacts .info .title {
+  font-family: "Geometria";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.box-contacts .info .content {
+  flex-direction: column;
+  gap: 10px;
+}
+.box-contacts .info .content,
+.box-contacts .info .content * {
+  font-family: "Geometria";
+  font-size: 18px;
+}
+.box-contacts .vCard .content * {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+.box-contacts .info .content p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .box-contacts h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .box-contacts .left-side {
+    max-width: 385px;
+  }
+  .box-contacts .right-side {
+    max-width: 400px;
+    margin-left: 77px;
+  }
+  .info-container .left-side > .info:nth-child(3) {
+    max-width: 318px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .box-contacts h1 {
+    display: none;
+  }
+
+  .box-contacts .info-container {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0;
+  }
+  .box-contacts .left-side,
+  .box-contacts .right-side {
+    max-width: unset;
+    gap: 30px;
+  }
+
+  .box-contacts .right-side {
+    margin-left: unset;
+  }
+  .box-contacts .info .content,
+  .box-contacts .info .content * {
+    font-size: 16px;
+  }
+}
