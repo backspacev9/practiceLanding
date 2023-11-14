@@ -10,6 +10,14 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 :root {
   --color-orange: #ff7715;
   --color-white: #fff;
