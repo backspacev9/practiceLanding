@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../index.css" />
+    <title>Блог</title>
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="./blog.css" />
   </head>
   <body>
     <header>
@@ -15,19 +16,19 @@
             <li><a href="#">Наша команда</a></li>
             <li><a href="#">Блог</a></li>
             <li><a href="#">Проекты</a></li>
-            <li><a href="./contacts.html">Контакты</a></li>
+            <li><a href="../contacts.html">Контакты</a></li>
           </nav>
           <span class="searchBox">
             <input type="text" name="search" id="search" placeholder="Поиск" />
-            <img src="../icons/search.svg" alt="" />
+            <img src="../../icons/search.svg" alt="" />
           </span>
           <nav class="right-nav">
             <span class="basket">
-              <img src="../icons/basket.svg" alt="" />
+              <img src="../../icons/basket.svg" alt="" />
               <div class="basket-counter">12</div>
             </span>
             <span class="location">
-              <img src="../icons/location.svg" alt="" />
+              <img src="../../icons/location.svg" alt="" />
               <span>Екатеринбург</span>
             </span>
             <span class="phone"><a href="tel:+73912052255">+7 391 205 22 55</a></span>
@@ -37,9 +38,9 @@
       <div class="bottom-bar">
         <section>
           <div class="sub-header">
-            <img src="../icons/logo.svg" alt="" />
+            <img src="../../icons/logo.svg" alt="" />
             <nav class="nav-bottom">
-              <li><img src="../icons//catalog.svg" alt="" /> <a href="#">Каталог</a></li>
+              <li><img src="../../icons/catalog.svg" alt="" /> <a href="#">Каталог</a></li>
               <li><a href="#">Застройщикам</a></li>
               <li><a href="#">Администрации</a></li>
               <li><a href="#">Проектировщикам</a></li>
@@ -50,36 +51,70 @@
             <li><a href="#">Наша команда</a></li>
             <li><a href="#">Блог</a></li>
             <li><a href="#">Проекты</a></li>
-            <li><a href="./contacts.html">Контакты</a></li>
+            <li><a href="../contacts.html">Контакты</a></li>
           </nav>
           <div class="right-nav">
             <span class="basket">
-              <img src="../icons/basket.svg" alt="" />
+              <img src="../../icons/basket.svg" alt="" />
               <div class="basket-counter">12</div>
             </span>
             <button class="btn-orange btn-header-top">Оставить заявку</button>
-            <img src="../icons/burger.svg" alt="" class="btn-burger">
+            <img src="../../icons/burger.svg" alt="" class="btn-burger">
           </div>
           </div>
           <button class="btn-orange btn-header-bottom">Оставить заявку</button>
           <div class="breadcrumbs">
             <li><a href="/">Главная</a></li>
             <span>></span>
-            <li><a href="./contacts.html">Контакты</a></li>
+            <li><a href="../blog/blog.html">Блог</a></li>
             
         </section>
       </div>
     </header>
     <main>
-     
+      <section class="blog">
+        <div class="blog-header">
+          <h1>Блог</h1>
+          <nav>
+            <div class="search">
+              <input type="text" placeholder="Найти запись">
+              <img src="../../icons/search.svg" alt="">
+            </div>
+            <select name="date" id="date">
+              <option value="Январь 2023" selected>Январь 2023</option>
+              <option value="Декабрь 2022" >Декабрь 2022</option>
+              <option value="Ноябрь 2022" >Ноябрь 2022</option>
+            </select>
+          </nav>
+        </div>
+        <div class="blog-container">
+            <div class="blog-card">
+              <img class="blog-img" src="../../images/playground.png" alt="">
+              
+              <article class="info">
+                <h2>Инфа про каталог</h2>
+                <span class="dateTime">28.08 19:54</span>
+                <p>Компания «Наш Двор» разрабатывает и производит оригинальное оборудование детских площадок, обеспечивающее активное развитие детей через игру. </p>
+                <p>Наши детские площадки, соответствующие возрастным группам от 3 до 6 и от 7 до 14 лет, поощряют детей активно участвовать в играх, быть уверенными в себе и общительными с другими детьми получая при этом необходимые моторные и двигательные навыки. </p>
+                <span class="btn-readBlog">Читать далее &#10230;</span>
+                <div class="author">
+                  <div class="avatar">
+                    <img src="../../images/playground.png" alt="">
+                    <span class="name">Ольга Рыбакова</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>  
+      </section>
     </main>
     <footer>
       <section>
-        <img src="../icons/logo.svg" alt="" class="logo-footer"> 
+        <img src="../../icons/logo.svg" alt="" class="logo-footer"> 
         
         <div class="footer-columns">
           <div class="footer-col footer-first-col">
-            <img src="../icons/logo.svg" alt="" class="logo-footer">
+            <img src="../../icons/logo.svg" alt="" class="logo-footer">
             <article >
               <span class="article-tittle">
                 <h3><a href="#">Договор</a></h3>
@@ -98,7 +133,7 @@
               <ul>
                 <li><a href="#">Блог</a></li>
                 <li><a href="#">Представители</a></li>
-                <li><a href="./contacts.html">Контакты</a></li>
+                <li><a href="../contacts.html">Контакты</a></li>
               </ul>
             </article>
           </div>
@@ -125,9 +160,9 @@
                 <li><a href="#">Екатеринбург</a></li>
                 <li><a href="tel:(391) 205-22-55">(391) 205-22-55</a></li>
                 <li class="social">
-                  <a href="#"><img src="../icons/social/vk.svg" alt="vk.com"></a>
-                  <a href="#"><img src="../icons/social/telegram.svg" alt="telegram.com"></a>
-                  <a href="#"><img src="../icons/social/facebook.svg" alt="facebook.com"></a>
+                  <a href="#"><img src="../../icons/social/vk.svg" alt="vk.com"></a>
+                  <a href="#"><img src="../../icons/social/telegram.svg" alt="telegram.com"></a>
+                  <a href="#"><img src="../../icons/social/facebook.svg" alt="facebook.com"></a>
                 </li>
               </ul>
             </article>
