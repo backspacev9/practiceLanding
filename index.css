@@ -1,19 +1,19 @@
 @font-face {
-  font-family: "Cera Pro";
+  font-family: "Cera Pro", sans-serif;
   src: url("./fonts/CeraPro-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: "Cera Pro Light";
+  font-family: "Cera Pro Light", sans-serif;
   src: url("./fonts/CeraPro-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Geometria";
-  src: url("../fonts/Geometria.ttf") format("truetype");
+  font-family: "Geometria", sans-serif;
+  src: url("../fonts/Geometria") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -23,6 +23,7 @@
   --color-white: #fff;
   --color-black: #191919;
   --color-blue: #2e75ff;
+  --color-gray: #9c9c9c;
 }
 * {
   box-sizing: border-box;
@@ -53,7 +54,7 @@ ul {
 
 body * {
   color: var(--color-black);
-  font-family: Cera Pro;
+  font-family: "Cera Pro", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -69,6 +70,10 @@ body * {
   width: 183px;
   height: 48px;
   background-color: var(--color-orange);
+  font-family: Cera Pro, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
   color: var(--color-white);
 }
 
